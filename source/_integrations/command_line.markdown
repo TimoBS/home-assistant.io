@@ -593,7 +593,7 @@ command_line:
       command_state: curl http://ip_address/api/sensors/27/
       value_template: >
         {{value_json.config.on}}
-      icon_template: >
+      icon: >
         {% if value_json.config.on == true %} mdi:toggle-switch
         {% else %} mdi:toggle-switch-off
         {% endif %}
